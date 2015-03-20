@@ -1,0 +1,2 @@
+serviceClass: blobdata.client.GreetingService
+path: ADC3BA136B97428DA7CD9E70F3EAD0FC.gwt.rpc

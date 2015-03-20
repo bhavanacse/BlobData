@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE project>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    	 xmlns="http://java.sun.com/xml/ns/javaee"
+    	 xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee;http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5">
+
+  <!-- Servlets -->
+  <servlet>
+    <servlet-name>blobdataentry</servlet-name>
+    <servlet-class>blobdata.BlobDataServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>blobdataentry</servlet-name>
+    <url-pattern>/blobdata</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+        <servlet-name>toupload</servlet-name>
+        <servlet-class>blobdata.UploadBlobServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+        <servlet-name>toupload</servlet-name>
+        <url-pattern>/upload</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+        <servlet-name>toserve</servlet-name>
+        <servlet-class>blobdata.ServeBlobServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+        <servlet-name>toserve</servlet-name>
+        <url-pattern>/serve</url-pattern>
+  </servlet-mapping>
+  
+  
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>blobdata.jsp</welcome-file>
+  </welcome-file-list>
+
+</web-app>

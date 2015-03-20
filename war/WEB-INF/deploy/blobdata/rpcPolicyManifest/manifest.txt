@@ -1,0 +1,3 @@
+# Module blobdata
+# RPC service class, partial path of RPC policy file
+blobdata.client.GreetingService, ADC3BA136B97428DA7CD9E70F3EAD0FC.gwt.rpc
